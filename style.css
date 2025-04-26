@@ -1,0 +1,235 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+}
+.StickyNav{
+    background-color: rgb(29, 27, 27);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+}
+.nav1{
+    display:flex;
+    height:80px;
+    background-color: rgb(29, 27, 27);
+}
+.brand{
+    color:white;
+    font-size: 25px;
+    margin-top: 22px;
+    margin-right: 61%;
+    margin-left: 24px;
+}
+.navList{
+    display:flex;
+    gap: 25px;
+    list-style-type: none;
+    
+}
+.navItem{
+    text-decoration: none;
+    /*text-align: center;*/
+    margin-top: 25px;
+    font-size:22px;
+}
+.navLink{
+    color:white;
+    text-decoration: none;
+}
+/*Hero Section*/
+.Hero{
+    height:300px;
+    background: rgb(188, 188, 188);
+    display:flex;  
+}
+.leftInfo{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-right: 40%;
+    margin-top: 30px;
+    margin-left: 30px;
+    line-height: 45px;
+}
+.leftInfo p{
+    font-size: 18px;
+}
+.BTN{
+    background-color: rgb(19, 116, 84);
+    padding:10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+    border-radius: 7px;
+    color: white;
+    font-size: 15px;
+}
+
+
+.rightInfo {
+    
+}
+.Image{
+    margin-right: 10px;
+    height: 220px;
+    margin-top: 24px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px rgb(184, 164, 164),  3px 3px 3px rgb(184, 164, 164) ;
+}  
+
+/* Product Features */
+.Products h1{
+    text-align: center;
+    margin-top: 28px;
+    margin-bottom: 32px;
+    font-size: 35px;
+}
+.productFeature{
+    display:flex;
+    gap:20px;
+    margin-left: 22px;
+    padding-bottom: 80px;
+}
+.Feature_BTN{
+    background-color: rgb(206, 240, 240);
+    font-size: 18px;
+    padding: 25px;
+    padding-left: 35px;
+    padding-right:35px ;
+    border-left: 7px solid rgb(43, 174, 200);
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    border-radius: 5px;
+}
+
+/*Feedback css*/
+.Feedback{
+    background-color: rgb(188, 188, 188);
+    padding-top: 30px;  
+}
+.Feedback h1{
+    text-align: center;
+    font-size: 35px;
+}
+.users_Say{
+    padding-top: 30px;
+    margin-left: 15px;
+    margin-right: 20px;
+    
+
+}
+.feedback_BTN{
+    background-color: white;
+    padding: 20px;
+    padding-left: 20px;
+    padding-right:1100px ;
+    border-left: 7px solid rgb(43, 174, 200);
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+/*footer section*/
+.xfooter{
+    height:120px;
+    width:100%;
+    background-color: rgb(55, 52, 52);
+    display: inline-block;
+    padding-top: 15px;
+    align-items: center;
+}
+.xfooter a{
+    text-decoration: none;
+    color:white;
+    line-height: 25px;
+    margin-left: 20px;
+}
+
+/* ContactForm Section */
+.Contact{
+    height:450px;
+    width:50%;
+    background-color: gray;
+    align-items: center;
+    margin-left: 28%;
+}
+.contactForm{
+    text-align: center;
+    margin-top: 40px;
+}
+.contactForm input, .contactForm textarea{
+    width:300px;
+    padding: 10px;
+    border: 1px solid rgb(49, 48, 48)
+    border-radius: 5px;
+}
+/*Media Query for mobile 
+.nav1{
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+} */
+ @media (max-width: 768px){
+    .nav1 {
+        flex-direction: column;
+        height:auto;
+        padding: 10px;
+    }
+    .brand{
+        margin: 10px 0;
+        text-align: center;
+
+    }
+    .navList{
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+        text-align: center;
+
+    }
+    .Hero{
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+    .leftInfo{
+        margin: 0;
+        text-align: center;
+    }
+    .rightInfo{
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+    }
+    .Image{
+        margin: 0;
+        width: 80%;
+        height: auto;
+    }
+    .productFeature{
+        flex-direction: column;
+        align-items: center;   
+    }
+    .Feature_BTN{
+        width: 80%;
+        text-align: center;
+    }
+    .users_Say{
+        margin: 0 10px;
+
+    }
+    .feedback_BTN{
+        padding-right: 50px;
+        width:90%
+    }
+    .Contact{
+        width: 90%;
+        margin-left: 5%;
+    }
+ }
